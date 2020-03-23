@@ -1,0 +1,143 @@
+class Producto:
+  nombre = ""
+  precio = 0
+  fechaCad = 0
+  cantidad = 0
+  id = 0
+  
+  def info(_self):
+    print("Id: " + str(_self.id))
+    print("Nombre: " + _self.nombre)
+    print("Precio: " + str(_self.precio))
+    print("Cantidad: " + str(_self.cantidad))
+    print("Fecha caducidad: " + str(_self.fechaCad))
+  
+  def descargarCantidad(_self, numero):
+    _self.cantidad = _self.cantidad - numero 
+
+class Tienda:
+  productos = {}
+  direccion = ""
+  nombre = ""
+  cambio = 0
+  
+  def cargarListado(_self):
+    f = open("tienda.csv")
+    cam = int(f.readline())
+    _self.cambio = cam
+    ls = f.readlines()
+    f.close()
+    for l in ls:
+      p = l.split(";")
+      pro = Producto()
+      pro.nombre = p[1]
+      pro.precio = int(p[3])
+      pro.fechaCad = 5
+      pro.cantidad = int(p[2])
+      pro.id = int(p[0])
+      
+      _self.productos[pro.id] = pro
+    
+  def agregarProducto(_self):
+    try:
+      nom = input("Nombre del producto: ")
+      pre = int(input("Precio del producto: "))
+      fec = int(input("Fecha de caducidad(Numero): "))
+      can = int(input("Cantidad: "))
+      idd = int(input("Identificador: "))
+      
+      p = Producto()
+      p.nombre = nom
+      p.precio = pre
+      p.fechaCad = fec
+      p.cantidad = can
+      p.id = idd
+      if(pre < 0 or can < 0):
+        print("Error: Los valores son menores que 0")
+      elif(idd in _self.productos.keys()):
+        print("Error: El identificador ya existe")
+      else:
+        _self.productos[p.id] = p
+    except(ValueError):
+      print("Error: Valor Invalido")
+      
+  def listarProductos(_self):
+    for p in _self.productos:
+      _self.productos[p].info()
+      print("-----------------")
+      
+  def venderProducto(_self):
+    idp = int(input("Cual es el id del producto: "))
+    can = int(input("Cual es la cantidad a comprar: "))
+    pla = int(input("Cuanto dinero tiene: "))
+    
+    pro = _self.productos[idp]
+    
+    v1 = _self.cambio + (can * pro.precio)
+    v2 = pla - (can * pro.precio)
+    
+    if(pro.cantidad < can):
+      print("Error: Cantidad insuficiente")
+    elif(can * pro.precio > pla):
+      print("Error: Dinero insuficiente")
+    elif(v2 > v1):
+      print("Error: No hay devuelta")
+    else:
+      _self.productos[idp].descargarCantidad(can)
+      _self.cambio = v1 - v2
+      print("El saldo de la tienda es: " + str(_self.cambio))
+  
+  def infoProducto(_self):
+    idp = int(input("Cual es el id del producto: "))
+    _self.productos[idp].info()
+    
+  def guardarTienda(_self):
+    f = open("tienda.csv", "w")
+    f.write(str(_self.cambio) + "\n")
+    for p in _self.productos:
+      pro = _self.productos[p]
+      f.write(str(pro.id) + ";" + pro.nombre + ";" +  str(pro.cantidad) + ";" + str(pro.precio) + "\n")
+    f.close()
+    
+  def mostrarCambio(_self):
+    print(_self.cambio)
+    
+ti = Tienda()
+ti.nombre = "El descuento"
+ti.direccion = "Lejos"
+ti.cargarListado()
+
+op = -1
+while(op != 0):
+  print("\n\n\n\n\n\n\n\n\n\n")
+  print("Tienda " + ti.nombre)
+  print("____________________")
+  print("1. Agregar producto")
+  print("2. Eliminar producto")
+  print("3. Listar productos")
+  print("4. Vender productos")
+  print("5. Stockearme")
+  print("6. Informacion Producto")
+  print("7. Guardar")
+  print("8. Cambio")
+  print("0. Salir")
+  try:
+    op = int(input("Escoger Opcion:"))
+    if (op == 1):
+      ti.agregarProducto()
+    elif(op == 3):
+      ti.listarProductos()
+    elif(op == 4):
+      ti.venderProducto()
+    elif(op == 6):
+      ti.infoProducto()
+    elif(op == 7):
+      ti.guardarTienda()
+    elif(op == 8):
+      ti.mostrarCambio()
+  except(ValueError):
+    print("Error: Valor Invalido")
+
+
+
+

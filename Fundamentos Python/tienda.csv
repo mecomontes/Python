@@ -1,0 +1,216 @@
+Id;Nombre;Cantidad;Valor
+1;Aceite comestibles;70;7000
+2;Aderezos;14;34000
+3;Consome;3;90000
+4;Crema de cacahuate;60;7500
+5;Crema para caf‚;7;28500
+6;Pure de tomate;87;73000
+7;Alimento para bebe;15;83000
+8;Alimento para mascotas;44;38000
+9;Atole;12;52000
+10;Avena;60;55500
+11;Az£car;93;2000
+12;Caf‚;82;38000
+13;Cereales;50;6500
+14;Chile piqu¡n;87;85500
+15;Especias;37;33000
+16;Flan en polvo;21;71500
+17;Formulas infantiles;89;12000
+18;Gelatinas en polvo/Grenetina;26;30500
+19;Harina;81;13000
+20;Harina preparada;74;18500
+21;Mole;47;28500
+22;Sal;59;50000
+23;Salsas envasadas;43;72500
+24;Sazonadores;59;10000
+25;Sopas en sobre;10;79500
+26;Cajeta;76;23000
+27;Catsup;96;55500
+28;Mayonesa;92;13000
+29;Mermelada;74;13000
+30;Miel;93;87000
+31;Te;65;44000
+32;Vinagre;61;72500
+33;Huevo;68;55000
+34;Pastas;10;46000
+35;Aceitunas;94;85500
+36;Champi¤ones enteros/rebanados;7;35500
+37;Ch¡charo con zanahoria;71;500
+38;Ch¡charos enlatados;100;20000
+39;Frijoles enlatados;80;15000
+40;Frutas en alm¡bar;59;11000
+41;Sardinas;10;28500
+42;At£n en agua/aceite;64;71500
+43;Chiles enlatados;52;64000
+44;Chiles envasados;65;65000
+45;Ensaladas enlatadas;66;6500
+46;Granos de elote enlatados;83;80500
+47;Sopa en lata;21;61000
+48;Vegetales en conserva;54;96000
+49;Leche condesada;42;86000
+50;Leche deslactosada;14;64000
+51;Leche en polvo;36;43000
+52;Leche evaporada;22;81500
+53;Leche light;55;52500
+54;Leche pasteurizada;34;63500
+55;Leche saborizada;49;62500
+56;Leche semidescremada;82;13500
+57;Crema;7;73000
+58;Yoghurt;100;63000
+59;Mantequilla;98;25500
+60;Margarina;50;81000
+61;Media crema;88;14000
+62;Queso;89;47000
+63;Papa;26;35500
+64;Palomitas;21;22000
+65;Frituras de ma¡z;75;55500
+66;Cacahuates;13;43500
+67;Botanas saladas;45;73500
+68;Barras alimenticias;17;80500
+69;Nueces y semillas;6;49500
+70;Caramelos;35;69000
+71;Dulces enchilados;2;87500
+72;Chocolate de mesa;32;96500
+73;Chocolate en polvo;16;86500
+74;Chocolates;94;76000
+75;Gomas de mascar;44;56000
+76;Mazap n;29;40500
+77;Malvaviscos;95;30500
+78;Pulpa de tamarindo;20;75500
+79;Pastillas de dulce;20;30500
+80;Paletas de dulce;50;4500
+81;Tortillas de harina/ma¡z;28;78000
+82;Galletas dulces;6;18000
+83;Galletas saladas;21;82500
+84;Pastelillos;91;91000
+85;Pan de caja;36;12000
+86;Pan dulce;63;66000
+87;Pan molido;64;44500
+88;Pan tostado;90;99000
+89;FRUTAS Y VERDURAS:;3;28500
+90;Aguacates;62;96500
+91;Ajos;63;43500
+92;Cebollas;19;92500
+93;Chiles;69;59500
+94;Cilantro/Perejil;74;35000
+95;Jitomate;33;88500
+96;Papas;89;90000
+97;Limones;50;72000
+98;Manzanas;93;92500
+99;Naranjas;100;78500
+100;Pl tanos;69;23000
+101;Agua mineral;31;54000
+102;Agua natural;28;4500
+103;Agua saborizada;86;57000
+104;Jarabes;24;63000
+105;Jugos/N‚ctares;32;9000
+106;Naranjadas;31;60000
+107;Bebidas de soya;23;74000
+108;Bebidas en polvo;52;66500
+109;Bebidas infantiles;39;36000
+110;Bebidas isot¢nicas;29;53000
+111;Energetizantes;75;44000
+112;Isot¢nicos;9;7500
+113;Refrescos;100;72500
+114;Bebidas preparadas;26;68000
+115;Cerveza;39;92000
+116;An¡s;18;7500
+117;Brandy;11;13500
+118;Ginebra;55;41000
+119;Cordiales;44;89000
+120;Mezcal;36;86000
+121;Jerez;26;44500
+122;Ron;25;13000
+123;Tequila;19;59500
+124;Sidra;86;83000
+125;Whiskey;2;93500
+126;Vodka;32;59000
+127;Pastas listas para comer;55;53500
+128;Sopas en vaso;51;59500
+129;Carnes y Embudos;7;98500
+130;Salchicha;10;42000
+131;Mortadela;81;81000
+132;Tocino;69;20000
+133;Jam¢n;9;24000
+134;Manteca;53;46500
+135;Chorizo;81;96500
+136;Carne de puerco/res/pollo;96;41500
+137;Suero;36;69000
+138;Agua oxigenada;86;85500
+139;Preservativos;35;30000
+140;Alcohol;49;41000
+141;Gasas;72;46500
+142;Analg‚sicos;73;28000
+143;Antigripales;73;71500
+144;Anti cidos;14;42500
+145;Toallas h£medas;16;67500
+146;Aceite para bebe;19;70500
+147;Toallas femeninas;19;26000
+148;Algod¢n;78;48000
+149;Tinte para el cabello;33;27500
+150;Biberones;51;43500
+151;Talco;7;92000
+152;Cepillo de dientes;52;12000
+153;Shampoo/ Acondicionador;58;51000
+154;Cotonetes;21;10000
+155;Rastrillos;57;7500
+156;Crema corporal/facial;85;81000
+157;Papel higi‚nico;19;9000
+158;Crema para afeitar;59;74500
+159;Pa¤uelos faciales;9;2000
+160;Dent¡fricos;67;91000
+161;Pa¤uelos desechables;15;63000
+162;Desodorantes en barra/aerosol;91;15000
+163;Maquillaje;40;58000
+164;Enjuague bucal;97;31500
+165;Lubricantes para labios;98;23500
+166;Gel/spray;89;71500
+167;Loci¢n hidratante;80;33000
+168;Jabones corporales/tocados;87;42000
+169;Suavizante de telas;90;84500
+170;µcido muri tico;28;89500
+171;Sosa caustica;57;44500
+172;Aluminio;92;62500
+173;Pilas;53;4000
+174;Shampoo para ropa;77;73500
+175;Servilletas;74;54500
+176;Servitoallas;81;47000
+177;Aromatizantes;3;77000
+178;Cera para autom¢vil;96;61500
+179;Cera para calzados;84;58500
+180;Pastillas sanitarias;56;58000
+181;Limpiadores l¡quidos;70;86500
+182;Limpiadores para pisos;3;64000
+183;Jab¢n de barra;52;12500
+184;Cerillos;18;90000
+185;Cloro/Blanqueador;6;25500
+186;Cloro para ropa;15;67500
+187;Jab¢n en barra;25;11500
+188;Insecticidas;1;52500
+189;Fibras limpiadoras;47;2000
+190;Desinfectantes;61;54000
+191;Detergentes para trastes;77;44000
+192;Detergente para ropa;79;55500
+193;Paletas/ Helados;89;89500
+194;Veladoras/Velas;74;84500
+195;Cepillo de pl stico;64;96500
+196;Vasos desechables;75;71000
+197;Cinta adhesiva;61;64000
+198;Cucharas de pl stico;87;2500
+199;Escobas/Trapeadores/Mechudos;78;11000
+200;Trampas para ratas;12;26500
+201;Tenedores de pl stico;48;99000
+202;Extensiones/Multicontacto;87;21500
+203;Recogedor de metal/pl stico;50;28500
+204;Popotes;81;39000
+205;Platos desechables;4;16500
+206;Focos;20;49500
+207;Fusibles;66;17000
+208;Jergas/Franelas;61;72000
+209;Matamoscas;30;39500
+210;Pegamento;81;4500
+211;Mecate/cuerda;24;9500
+212;Tarjetas telef¢nicas;7;91500
+213;Recargas m¢viles;20;98000
+214;Hielo;5;81000
+215;Cigarros;1;65500

@@ -1,0 +1,14 @@
+{% extends '/base/base.html' %}
+
+{% block title %} {{ title }}  {% endblock %}
+
+{% block content %}
+
+    {% from "_macro.html" import render_field %}
+    
+    <form>
+        {{ render_field(form.username) }}
+    </form>
+    {{ show_list_h(title) }}
+    
+{% endblock %}

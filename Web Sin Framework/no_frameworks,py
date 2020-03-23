@@ -1,0 +1,58 @@
+#!/usr/bin/python3.6
+# -*- coding: utf-8 -*-
+
+# Estos modulos habilitan la comunicacion con el CGI
+import cgi, cgitb; cgitb.enable()
+
+# HTTP Header
+print("Content-type: text/html; charset=utf-8\n\n")
+
+# Para usar el Dicctionario de sustitucion
+from string import Template
+
+# Para generar el codigo HTML de la tabla
+import xml.etree.cElementTree as ET
+
+# Genera el contenido de la tabla
+table_headers = ET.Element('tr')
+th1 = ET.SubElement(table_headers, 'th', scope = 'col')
+th1.text = "X"
+th2 = ET.SubElement(table_headers, 'th', scope = 'col')
+th2.text = "Y"
+th3 = ET.SubElement(table_headers, 'th', scope = 'col')
+th3.text = "Z"
+
+table_body = ET.Element('tbody')
+tr1 = ET.SubElement(table_body, 'tr')
+th1 = ET.SubElement(tr1, 'th', scope = 'row')
+th1.text = "A"
+tr1_2 = ET.SubElement(tr1, 'td')
+tr1_2.text = "2"
+tr1_2 = ET.SubElement(tr1, 'td')
+tr1_2.text = "3"
+
+tr2 = ET.SubElement(table_body, 'tr')
+th2 = ET.SubElement(tr2, 'th', scope = 'row')
+th2.text = "B"
+tr1_2 = ET.SubElement(tr2, 'td')
+tr1_2.text = "4"
+tr1_2 = ET.SubElement(tr2, 'td')
+tr1_2.text = "5"
+
+ths = ET.tostring(table_headers, "utf-8")
+tbody = ET.tostring(table_body, "utf-8")
+
+with open("template.py.html") as template:
+	html_template = template.read()
+
+subst_dict = dict (
+    title = "Python SIN Frameworks",
+    header = "No es muy dificil",
+    message = "Usamos Bootstrap para facilitar el estilo de la pagina.",
+    ths = ths.decode("utf-8"),
+    tbody = tbody.decode("utf-8"),
+    footer = "Saludos del Ing. Linux"
+)
+
+# Imprime el template sustituyendo las palabras en el diccionario
+print(Template(html_template).safe_substitute(subst_dict))
